@@ -1,0 +1,61 @@
+# ==========================================
+# Secrets / authentication
+# ==========================================
+security.json
+*.jceks
+*.key
+*.pem
+.env
+.env.*
+
+# ==========================================
+# Solr runtime data
+# ==========================================
+solr-data-backup/
+data/
+logs/
+filestore/
+userfiles/
+
+# ==========================================
+# Downloaded Solr distributions / binaries
+# ==========================================
+solr-*.tgz
+solr-*.tgz.sha512
+solr-core-*.jar
+
+# ==========================================
+# Debug / investigation artifacts
+# ==========================================
+authorize-section.txt
+http-solr-call.txt
+ranger-authorizer-javap.txt
+ranger-current-policy.json
+solr-authorization-context.txt
+solr-test-*.json
+
+# ==========================================
+# SBOM backups
+# ==========================================
+*.bak
+*.bak2
+
+# ==========================================
+# OS / IDE
+# ==========================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ==========================================
+# Temporary files
+# ==========================================
+*.tmp
+*.log
+
+# Apache Ranger build artifacts
+ranger-2.8.0-solr-plugin/
+ranger-solr-plugin-2.8.0.jar
+
+Dockerfile.old

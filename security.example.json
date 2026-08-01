@@ -1,0 +1,13 @@
+{
+  "authentication": {
+    "blockUnknown": true,
+    "class": "solr.BasicAuthPlugin",
+    "credentials": {
+      "admin": "REPLACE_WITH_SOLR_GENERATED_PASSWORD_HASH",
+      "testuser": "REPLACE_WITH_SOLR_GENERATED_PASSWORD_HASH"
+    }
+  },
+  "authorization": {
+    "class": "org.apache.ranger.authorization.solr.authorizer.RangerSolrAuthorizer"
+  }
+}
