@@ -59,3 +59,11 @@ ranger-2.8.0-solr-plugin/
 ranger-solr-plugin-2.8.0.jar
 
 Dockerfile.old
+
+# Node / React frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
