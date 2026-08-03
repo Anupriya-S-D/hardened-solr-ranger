@@ -67,3 +67,10 @@ frontend/dist/
 frontend/.env
 frontend/.env.*
 !frontend/.env.example
+
+# Local secrets and test credentials
+set-testuser.json
+.env
+.env.*
+!.env.example
+security.json
