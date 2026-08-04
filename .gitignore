@@ -13,10 +13,9 @@ security.json
 # ==========================================
 solr-data-backup/
 data/
-logs/
+# logs/
 filestore/
 userfiles/
-
 # ==========================================
 # Downloaded Solr distributions / binaries
 # ==========================================
@@ -84,6 +83,6 @@ security.json
 logs/*
 !logs/README.md
 !logs/authorization-validation.txt
-!logs/ranger-audit-sample.json
-
 !logs/grype-high-critical.txt
+!logs/ranger-audit-sample.json
+!logs/dependency-track-validation.md

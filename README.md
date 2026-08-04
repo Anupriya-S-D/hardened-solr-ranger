@@ -624,6 +624,28 @@ Therefore, this repository reproduces the hardened Solr image and SecureSolr fro
 
 ---
 
+## Dependency-Track Validation
+
+The SecureSolr SBOM was analyzed using OWASP Dependency-Track v4.14.3 for software composition analysis.
+
+The analyzed Solr project contained **1,170 components**. At the time of validation, Dependency-Track reported:
+
+- Critical vulnerabilities: **0**
+- High vulnerabilities: **0**
+- Medium vulnerabilities: **0**
+- Low vulnerabilities: **0**
+- Policy violations: **0**
+
+The Dependency-Track vulnerability audit displayed no vulnerability findings for the analyzed SBOM.
+
+![Dependency-Track SBOM Analysis](docs/images/dependency-track-results.png)
+
+Detailed validation evidence is available in:
+
+`logs/dependency-track-validation.md`
+
+> **Note:** Dependency-Track and Grype may produce different vulnerability results because they can use different vulnerability data sources and component-matching methods. The Dependency-Track results above represent this specific SBOM analysis and should not be interpreted as a general claim that SecureSolr contains no vulnerabilities.
+
 ## Security Disclaimer
 
 SecureSolr is a security demonstration and validation environment.
