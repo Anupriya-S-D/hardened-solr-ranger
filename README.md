@@ -1,8 +1,12 @@
 # SecureSolr — Hardened Apache Solr with Apache Ranger
 
-SecureSolr is a Dockerized Apache Solr security demonstration integrating Apache Solr 8.11.2 with Apache Ranger 2.8.0 for centralized authorization, policy enforcement, and audit logging.
+SecureSolr is a Dockerized Apache Solr security demonstration integrating **Apache Solr 8.11.2** with **Apache Ranger 2.8.0** for centralized authorization, policy enforcement, and audit logging.
 
-The project also includes a React-based security dashboard for monitoring SolrCloud, collections, Ranger policies, users, permissions, and authorization audit events.
+The project also includes a **React + Vite security dashboard** for monitoring SolrCloud, collections, Ranger policies, users, permissions, and authorization audit events.
+
+The repository includes architecture documentation, end-to-end security validation evidence, vulnerability scan results, sample data, and Software Bill of Materials (SBOM) files.
+
+---
 
 ## Features
 
@@ -24,8 +28,10 @@ The project also includes a React-based security dashboard for monitoring SolrCl
 - Dependency/JAR hardening support
 - CycloneDX SBOM
 - SPDX SBOM
+- Grype vulnerability scanning
 - Example security configuration without production credentials
-- Secrets excluded from Git
+- Secrets and local security configuration excluded from Git
+- Sanitized authorization and audit evidence
 
 ### SecureSolr Dashboard
 
@@ -40,6 +46,8 @@ React + Vite frontend providing:
 - Allowed/Denied authorization statistics
 - Audit search and filtering
 - Live data retrieved from Solr and Ranger APIs
+
+---
 
 ## Architecture
 
@@ -68,15 +76,65 @@ React + Vite frontend providing:
                     Ranger Audit Solr
 ```
 
-Authentication is performed by Solr BasicAuth.
+Authentication is performed by **Solr BasicAuth**.
 
-Authorization decisions are performed by the Apache Ranger Solr plugin.
+Authorization decisions are performed by the **Apache Ranger Solr plugin**.
 
-Authorization events are written to Ranger Audit Solr and displayed by the SecureSolr frontend.
+Authorization events are written to **Ranger Audit Solr** and displayed by the SecureSolr frontend.
+
+For a more detailed description of the architecture and security flow, see:
+
+```text
+docs/architecture.md
+```
+
+---
+
+## Security Flow
+
+The SecureSolr security path is:
+
+```text
+User Request
+     |
+     v
+Solr BasicAuth
+     |
+     v
+Authentication
+     |
+     v
+Apache Ranger Solr Plugin
+     |
+     v
+Ranger Policy Evaluation
+     |
+ +---+---+
+ |       |
+ v       v
+ALLOW   DENY
+ |       |
+ +---+---+
+     |
+     v
+Ranger Audit
+     |
+     v
+SecureSolr Dashboard
+```
+
+This separates authentication from authorization:
+
+- **Solr BasicAuth** verifies the identity of the user.
+- **Apache Ranger** determines what the authenticated user is permitted to do.
+- **Ranger Audit** records authorization decisions.
+- **SecureSolr Dashboard** provides visibility into the resulting security events.
+
+---
 
 ## Tested Authorization Flow
 
-The demo includes a Ranger collection policy where:
+The demonstration includes a Ranger collection policy where:
 
 - `admin` has query and update permissions.
 - `testuser` has query permission.
@@ -84,7 +142,7 @@ The demo includes a Ranger collection policy where:
 
 The integration was tested end-to-end.
 
-### Allowed request
+### Allowed Request
 
 ```text
 User: testuser
@@ -94,7 +152,7 @@ Ranger Policy: 4
 Result: ALLOWED
 ```
 
-### Denied request
+### Denied Request
 
 ```text
 User: testuser
@@ -105,6 +163,14 @@ Result: DENIED (HTTP 403)
 ```
 
 Both authorization decisions are recorded by Ranger Audit and displayed in the SecureSolr Audit Logs page.
+
+Detailed validation documentation is available in:
+
+```text
+docs/validation.md
+```
+
+---
 
 ## Project Structure
 
@@ -117,8 +183,26 @@ Both authorization decisions are recorded by Ranger Audit and displayed in the S
 ├── solr-entrypoint.sh
 ├── solr.xml
 ├── start-services.sh
-├── sbom.cdx.json
-├── sbom.spdx.json
+│
+├── data/
+│   ├── README.md
+│   └── sample-data.json
+│
+├── docs/
+│   ├── architecture.md
+│   └── validation.md
+│
+├── logs/
+│   ├── README.md
+│   ├── authorization-validation.txt
+│   ├── grype-high-critical.txt
+│   └── ranger-audit-sample.json
+│
+├── sbom/
+│   ├── README.md
+│   ├── sbom.cdx.json
+│   └── sbom.spdx.json
+│
 └── frontend/
     ├── src/
     │   ├── components/
@@ -137,6 +221,81 @@ Both authorization decisions are recorded by Ranger Audit and displayed in the S
     └── vite.config.js
 ```
 
+---
+
+## Documentation and Validation Evidence
+
+The repository contains supporting documentation and sanitized security validation evidence.
+
+### Architecture Documentation
+
+```text
+docs/architecture.md
+```
+
+Contains a detailed description of the SecureSolr architecture, including:
+
+- SolrCloud
+- Solr BasicAuth
+- Apache Ranger
+- Ranger policy enforcement
+- Ranger auditing
+- SecureSolr frontend integration
+
+### Validation Documentation
+
+```text
+docs/validation.md
+```
+
+Documents end-to-end validation of:
+
+- Authentication
+- Allowed authorization
+- Denied authorization
+- Ranger policy enforcement
+- Ranger audit generation
+- Frontend integration
+- Security artifact validation
+
+### Authorization Validation
+
+```text
+logs/authorization-validation.txt
+```
+
+Contains the results of the authorization tests performed against the Solr and Apache Ranger environment.
+
+### Ranger Audit Sample
+
+```text
+logs/ranger-audit-sample.json
+```
+
+Contains a sanitized representation of Ranger authorization audit events.
+
+Raw credentials, authentication headers, password hashes, API tokens, private keys, and other secrets are intentionally excluded.
+
+### Vulnerability Scan
+
+```text
+logs/grype-high-critical.txt
+```
+
+Contains selected vulnerability findings generated using **Grype** for security analysis of the project dependencies/container environment.
+
+These findings are retained as security assessment evidence and should not be interpreted as a claim that the Solr 8.11.2 dependency stack is vulnerability-free.
+
+### Sample Data
+
+```text
+data/sample-data.json
+```
+
+Contains non-sensitive sample data that can be used for demonstration and validation.
+
+---
+
 ## Prerequisites
 
 The following tools are required:
@@ -145,14 +304,18 @@ The following tools are required:
 - Node.js
 - npm
 
-The full security demonstration also requires an Apache Ranger 2.8.0 environment containing:
+The full security demonstration also requires an **Apache Ranger 2.8.0** environment containing:
 
 - Ranger Admin
 - Ranger database
 - Ranger ZooKeeper
 - Ranger Audit Solr
 
-The development environment for this project uses locally built patched Ranger 2.8.0 images. Those Ranger images are currently an external prerequisite and are not built by this repository.
+The development environment for this project uses locally built patched Ranger 2.8.0 images.
+
+Those Ranger images are currently an external prerequisite and are not built by this repository.
+
+---
 
 ## Build the Hardened Solr Image
 
@@ -161,6 +324,8 @@ From the repository root:
 ```bash
 docker build -t solr-hardened:8.11.2 .
 ```
+
+---
 
 ## Security Configuration
 
@@ -172,9 +337,20 @@ cp security.example.json security.json
 
 Configure the required Solr users locally.
 
-Do not commit `security.json`, `.env` files, passwords, API tokens, or other credentials.
+Do **not** commit:
 
-The repository `.gitignore` excludes local security configuration.
+```text
+security.json
+.env
+.env.*
+password files
+API tokens
+private keys
+```
+
+The repository `.gitignore` excludes local security configuration and other generated/private artifacts.
+
+---
 
 ## Frontend Setup
 
@@ -198,6 +374,8 @@ npm run dev
 
 Vite will display the local URL for the SecureSolr dashboard.
 
+---
+
 ## Frontend API Configuration
 
 During development, the Vite server proxies requests to the local Solr and Ranger services.
@@ -215,6 +393,8 @@ RANGER_PASSWORD=<ranger-admin-password>
 ```
 
 Do not commit the real `.env` file.
+
+---
 
 ## Dashboard Pages
 
@@ -281,6 +461,8 @@ Retrieves Ranger authorization events and displays:
 
 Builds a permission overview from Ranger policies showing which resources and actions are available to each user.
 
+---
+
 ## Production Frontend Build
 
 Create an optimized frontend build with:
@@ -296,50 +478,97 @@ The production assets are generated under:
 frontend/dist/
 ```
 
-## SBOM
+The generated `dist/` directory should not be committed unless it is intentionally required for deployment.
 
-The repository includes Software Bill of Materials files in two formats:
+---
+
+## Software Bill of Materials (SBOM)
+
+The repository includes Software Bill of Materials files in two formats.
+
+### CycloneDX
 
 ```text
-sbom.cdx.json
-sbom.spdx.json
+sbom/sbom.cdx.json
 ```
 
-These can be used with vulnerability-management tools such as Dependency-Track.
+### SPDX
+
+```text
+sbom/sbom.spdx.json
+```
+
+Additional SBOM information is available in:
+
+```text
+sbom/README.md
+```
+
+The SBOM files provide an inventory of software components and dependencies and can be used with vulnerability-management and software supply-chain security tools such as Dependency-Track.
+
+---
+
+## Vulnerability Assessment
+
+Security assessment artifacts are maintained separately from runtime configuration.
+
+The repository contains a sanitized Grype report:
+
+```text
+logs/grype-high-critical.txt
+```
+
+The report documents identified dependency vulnerabilities and provides evidence of vulnerability analysis performed against the environment.
+
+SecureSolr uses Apache Solr 8.11.2 as the target version for this security demonstration. Because this is an older Solr dependency stack, the repository does **not** claim that all upstream vulnerabilities have been eliminated.
+
+Instead, the project demonstrates security controls and assessment practices including:
+
+- Container hardening
+- Dependency/JAR analysis
+- Vulnerability scanning
+- SBOM generation
+- Authentication
+- Centralized authorization
+- Policy enforcement
+- Security auditing
+- Secret exclusion from source control
+
+---
 
 ## Security Notes
 
 This repository intentionally does not contain plaintext production credentials.
 
-Do not commit:
+Never commit:
 
-```text
-security.json
-.env
-.env.*
-password files
-API tokens
-private keys
-```
+- `security.json`
+- `.env`
+- `.env.*`
+- Password files
+- API tokens
+- Private keys
+- Authentication headers
+- Raw production audit data containing sensitive information
 
-Use example configuration files and environment variables when sharing or deploying the project.
+Use example configuration files, environment variables, secret-management mechanisms, and sanitized evidence when sharing or deploying the project.
+
+---
 
 ## Demonstration
 
-A typical security demonstration is:
+A typical SecureSolr security demonstration is:
 
-```text
 1. Start the Ranger infrastructure.
 2. Start the hardened Solr container.
 3. Start the SecureSolr React frontend.
 4. Open Ranger Policies and verify the collection policy.
-5. Query testcollection as testuser.
+5. Query `testcollection` as `testuser`.
 6. Ranger allows the query.
-7. Attempt an update as testuser.
-8. Ranger denies the update with HTTP 403.
+7. Attempt an update as `testuser`.
+8. Ranger denies the update with HTTP `403`.
 9. Open Audit Logs.
-10. Verify both ALLOWED and DENIED authorization events.
-```
+10. Verify both `ALLOWED` and `DENIED` authorization events.
 
 This demonstrates the complete security path:
 
@@ -359,8 +588,46 @@ Ranger Audit
 SecureSolr Dashboard
 ```
 
+---
+
+## Validation Summary
+
+The SecureSolr environment has been used to validate the following security behavior:
+
+| Validation | Expected Result |
+|---|---|
+| Solr authentication | Authenticated users can access permitted Solr resources |
+| Ranger integration | Solr authorization requests reach Ranger |
+| Allowed query | `testuser` query is allowed |
+| Denied update | `testuser` update is rejected with HTTP 403 |
+| Ranger auditing | Authorization events are recorded |
+| Audit visibility | ALLOWED and DENIED events are visible through the dashboard |
+| SBOM generation | CycloneDX and SPDX SBOMs are available |
+| Vulnerability assessment | Grype findings are retained as security evidence |
+| Secret protection | Production credentials are excluded from the repository |
+
+Detailed validation evidence is available under:
+
+```text
+docs/
+logs/
+sbom/
+```
+
+---
+
 ## Current Limitation
 
-The custom patched Apache Ranger 2.8.0 Docker images used by the development environment are currently external to this repository.
+The custom patched **Apache Ranger 2.8.0 Docker images** used by the development environment are currently external to this repository.
 
 Therefore, this repository reproduces the hardened Solr image and SecureSolr frontend, while an existing compatible Ranger 2.8.0 environment is required for the complete Ranger integration demonstration.
+
+---
+
+## Security Disclaimer
+
+SecureSolr is a security demonstration and validation environment.
+
+The included example configuration, sample data, validation logs, audit samples, and security artifacts are intended for development, testing, and demonstration purposes.
+
+Production deployments should use organization-approved secret management, TLS configuration, access controls, network isolation, vulnerability-management processes, supported software versions, and operational security controls.
