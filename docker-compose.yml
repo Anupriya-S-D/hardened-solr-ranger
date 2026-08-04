@@ -1,0 +1,102 @@
+services:
+
+  ranger-db:
+    image: apache/ranger-db:2.8.0-patched
+    container_name: apache-ranger-db
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      RANGER_DB_PASSWORD: ${RANGER_DB_PASSWORD}
+    volumes:
+      - ranger-db-data:/var/lib/postgresql/data
+    networks:
+      - rangernw
+
+  ranger-zk:
+    image: apache/ranger-zk:2.8.0-patched
+    container_name: apache-ranger-zk
+    restart: always
+    ports:
+      - "22181:2181"
+    volumes:
+      - ranger-zk-logs:/logs
+      - ranger-zk-data:/data
+      - ranger-zk-datalog:/datalog
+    networks:
+      - rangernw
+
+  ranger-solr:
+    image: apache/ranger-solr:2.8.0-patched
+    container_name: apache-ranger-solr
+    restart: always
+    command:
+      - solr-precreate
+      - ranger_audits
+      - /opt/solr/server/solr/configsets/ranger_audits/
+    ports:
+      - "8983:8983"
+    volumes:
+      - ranger-solr-data:/var/solr/data
+    networks:
+      - rangernw
+
+  ranger-admin:
+    image: apache/ranger:2.8.0-patched
+    container_name: apache-ranger
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      RANGER_DB_USER: ${RANGER_DB_USER}
+      RANGER_DB_PASSWORD: ${RANGER_DB_PASSWORD}
+    ports:
+      - "6080:6080"
+    volumes:
+      - ranger-admin-conf:/etc/ranger
+      - ranger-admin-logs:/var/log/ranger
+    depends_on:
+      - ranger-db
+      - ranger-zk
+      - ranger-solr
+    networks:
+      - rangernw
+
+  securesolr:
+    image: solr-hardened:8.11.2
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: solr-test
+    ports:
+      - "8090:8090"
+    volumes:
+      - solr-data:/xbiom/data/solr/data
+    depends_on:
+      - ranger-admin
+    networks:
+      - rangernw
+
+networks:
+  rangernw:
+    name: ranger_rangernw
+
+volumes:
+  ranger-db-data:
+    name: ranger_ranger-db-data
+
+  ranger-admin-conf:
+    name: ranger_ranger-admin-conf
+
+  ranger-admin-logs:
+    name: ranger_ranger-admin-logs
+
+  ranger-solr-data:
+    name: ranger_ranger-solr-data
+
+  ranger-zk-logs:
+
+  ranger-zk-data:
+
+  ranger-zk-datalog:
+
+  solr-data:
+    name: solr-data
