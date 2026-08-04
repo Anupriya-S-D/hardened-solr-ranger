@@ -74,3 +74,16 @@ set-testuser.json
 .env.*
 !.env.example
 security.json
+
+# Allow sanitized demo dataset for repository validation
+!data/
+!data/README.md
+!data/sample-data.json
+# Allow sanitized validation evidence
+!logs/
+logs/*
+!logs/README.md
+!logs/authorization-validation.txt
+!logs/ranger-audit-sample.json
+
+!logs/grype-high-critical.txt

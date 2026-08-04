@@ -1,0 +1,37 @@
+[
+  {
+    "id": "DOC-001",
+    "title": "Apache Solr Security Overview",
+    "category": "security",
+    "department": "engineering",
+    "status": "active"
+  },
+  {
+    "id": "DOC-002",
+    "title": "Apache Ranger Access Control",
+    "category": "authorization",
+    "department": "security",
+    "status": "active"
+  },
+  {
+    "id": "DOC-003",
+    "title": "SolrCloud Administration Guide",
+    "category": "administration",
+    "department": "engineering",
+    "status": "active"
+  },
+  {
+    "id": "DOC-004",
+    "title": "Ranger Audit Demonstration",
+    "category": "audit",
+    "department": "security",
+    "status": "active"
+  },
+  {
+    "id": "DOC-005",
+    "title": "SecureSolr Test Document",
+    "category": "testing",
+    "department": "development",
+    "status": "active"
+  }
+]

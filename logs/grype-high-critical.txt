@@ -1,0 +1,345 @@
+﻿[0156] ERROR discovered vulnerabilities at or above the severity threshold
+NAME                           INSTALLED         FIXED IN          TYPE          VULNERABILITY        SEVERITY  EPSS           RISK
+commons-text                   1.6               1.10.0            java-archive  GHSA-599f-7c49-w659  Critical  99.9% (99th)   93.9
+tika-core                      1.27              3.2.2             java-archive  GHSA-f58c-gq56-vjjf  Critical  78.8% (99th)   74.8
+tika-parsers                   1.27              2.0.0             java-archive  GHSA-f58c-gq56-vjjf  Critical  78.8% (99th)   74.8
+solr-core                      8.11.2            8.11.3            java-archive  GHSA-37vr-vmg4-jwpw  High      83.8% (99th)   68.3
+http2-common                   9.4.44.v20210927  9.4.53            java-archive  GHSA-qppj-fm5r-hxr3  Medium    100.0% (99th)  58.3   (kev)
+http2-server                   9.4.44.v20210927  9.4.53            java-archive  GHSA-qppj-fm5r-hxr3  Medium    100.0% (99th)  58.3   (kev)
+jackson-databind               2.4.0             2.7.9.2           java-archive  GHSA-rfx6-vp9g-rh7v  Critical  49.7% (98th)   46.7
+jackson-databind               2.4.0             2.6.7.1           java-archive  GHSA-qxxx-2pp7-5hmx  Critical  37.7% (98th)   35.5
+spring-web                     5.3.39            6.0.0             java-archive  GHSA-4wrc-f8pq-fpqp  Critical  32.3% (98th)   30.3
+solr-core                      8.11.2            9.8.0             java-archive  GHSA-4p5m-gvpf-f3x5  Medium    47.2% (98th)   27.4
+jackson-databind               2.4.0             2.6.7.4           java-archive  GHSA-4w82-r329-3q67  Critical  26.6% (97th)   25.0
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-mph4-vhrx-mv67  Medium    45.2% (98th)   24.6
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-cggj-fvv3-cqwv  Critical  20.1% (97th)   18.9
+jackson-databind               2.4.0             2.7.9.7           java-archive  GHSA-p43x-xfjf-5jhr  Critical  18.3% (96th)   17.2
+jackson-databind               2.4.0             2.7.9.7           java-archive  GHSA-q93h-jc49-78gg  Critical  17.8% (96th)   16.7
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-5ww9-j83m-q7qx  High      21.9% (97th)   16.5
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-9gph-22xh-8x98  High      20.9% (97th)   16.3
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-645p-88qh-w398  Critical  12.7% (95th)   11.9
+woodstox-core                  6.2.4             6.4.0             java-archive  GHSA-3f7h-mf4q-vrm4  Medium    19.7% (97th)   11.3
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-h822-r4r5-v8jg  Critical  10.8% (95th)   10.1
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-c8hm-7hpq-7jhg  Critical  10.6% (95th)   10.0
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-5r5r-6hpj-8gg9  High      12.5% (95th)   9.8
+gson                           2.7               2.8.9             java-archive  GHSA-4jrv-ppp4-jm57  High      12.2% (95th)   9.3
+jackson-databind               2.4.0             2.7.9.5           java-archive  GHSA-4gq5-ch57-c2mg  Critical  9.7% (95th)    9.1
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-f9xh-2qgp-cq57  High      10.9% (95th)   8.5
+tika-parsers                   1.27              2.0.0-ALPHA       java-archive  GHSA-p72g-pv48-7w9x  Critical  9.1% (94th)    8.4
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-gwp4-hfv6-p7hw  High      10.8% (95th)   8.1
+jackson-databind               2.4.0             2.6.7.4           java-archive  GHSA-gww7-p5w4-wrfv  Critical  8.6% (94th)    8.1
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-m6x4-97wx-4q27  High      10.4% (95th)   8.1
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-h592-38cm-4ggp  Critical  8.4% (94th)    7.9
+jackson-databind               2.4.0             2.7.9.6           java-archive  GHSA-6fpp-rgj9-8rwc  Critical  8.1% (94th)    7.6
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-r3gr-cxrf-hg25  High      9.5% (94th)    7.4
+jackson-databind               2.4.0             2.9.10.6          java-archive  GHSA-h3cw-g4mq-c5x2  High      9.4% (94th)    7.3
+jackson-databind               2.4.0             2.6.7.4           java-archive  GHSA-fqwf-pjwf-7vqv  High      8.0% (94th)    6.5
+ant                            1.8.2             1.10.9            java-archive  GHSA-f62v-xpxf-3v68  High      8.2% (94th)    6.2
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-wh8g-3j2c-rqj5  High      7.7% (93rd)    6.0
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-cmfg-87vq-g5g4  Medium    11.0% (95th)   6.0
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-5949-rw7g-wx7w  High      7.5% (93rd)    5.8
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-qjw2-hr98-qgfh  High      7.3% (93rd)    5.7
+jackson-databind               2.4.0             2.7.9.4           java-archive  GHSA-cjjf-94ff-43w7  High      7.3% (93rd)    5.5
+jackson-databind               2.4.0             2.7.9.5           java-archive  GHSA-w3f4-3q6j-rh82  High      7.0% (93rd)    5.5
+jackson-databind               2.4.0             2.7.9.4           java-archive  GHSA-qr7j-h6gg-jmgc  Critical  5.7% (92nd)    5.4
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-mx7p-6679-8g3q  Critical  5.7% (92nd)    5.4
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-gjmw-vf9h-g25v  Critical  5.4% (91st)    5.1
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-85cw-hj65-qqv9  Critical  5.0% (91st)    4.7
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-fmmc-742q-jg75  Critical  4.9% (91st)    4.6
+jackson-databind               2.4.0             2.8.11.5          java-archive  GHSA-f3j5-rmmp-3fc5  Critical  4.6% (90th)    4.4
+jackson-databind               2.4.0             2.6.7.3           java-archive  GHSA-cf6r-3wgc-h863  High      5.6% (92nd)    4.2
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-8w26-6f25-cm9x  High      5.2% (91st)    4.1
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-v585-23hc-c647  High      5.2% (91st)    4.1
+jackson-databind               2.4.0             2.9.10.8          java-archive  GHSA-r695-7vr9-jgc2  High      5.2% (91st)    4.1
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-8c4j-34r4-xr8g  High      5.0% (91st)    3.9
+hadoop-common                  3.2.2             3.2.3             java-archive  GHSA-gx2c-fvhc-ph4j  Critical  4.2% (89th)    3.9
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-89qr-369f-5m5x  High      5.0% (91st)    3.9
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-cvm9-fjm9-3572  High      5.0% (91st)    3.9
+hadoop-common                  3.2.2             3.2.4             java-archive  GHSA-8wm5-8h9c-47pc  Critical  4.1% (89th)    3.9
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-vfqx-33qm-g869  High      4.9% (91st)    3.8
+jackson-databind               2.4.0             2.6.7.5           java-archive  GHSA-9m6f-7xcq-8vf8  High      4.9% (91st)    3.8
+jackson-databind               2.4.0             2.12.6.1          java-archive  GHSA-57j2-w4cx-62h2  High      4.9% (91st)    3.6
+http2-hpack                    9.4.44.v20210927  9.4.53            java-archive  GHSA-wgh7-54f2-x98r  High      3.8% (88th)    2.8
+hadoop-common                  3.2.2             3.2.3             java-archive  GHSA-rmpj-7c96-mrg8  Critical  2.9% (85th)    2.7
+jackson-databind               2.4.0             2.9.10.4          java-archive  GHSA-rpr3-cw39-3pxh  High      3.3% (87th)    2.6
+solr-core                      8.11.2            8.11.3            java-archive  GHSA-3hwc-rqwp-v36q  High      3.3% (87th)    2.5
+avatica-core                   1.18.0            1.22.0            java-archive  GHSA-w7f5-jrpr-5c2m  High      3.0% (85th)    2.4
+protobuf-java                  3.11.0            3.25.5            java-archive  GHSA-735f-pc8j-v9w8  High      2.8% (84th)    2.2
+jackson-databind               2.13.3            2.13.4            java-archive  GHSA-rgv9-q543-rqg4  High      2.8% (84th)    2.1
+jackson-databind               2.4.0             2.12.7.1          java-archive  GHSA-rgv9-q543-rqg4  High      2.8% (84th)    2.1
+jackson-databind               2.13.3            2.13.4.2          java-archive  GHSA-jjjh-jjxp-wpff  High      2.8% (84th)    2.1
+jackson-databind               2.4.0             2.12.7.1          java-archive  GHSA-jjjh-jjxp-wpff  High      2.8% (84th)    2.1
+calcite-core                   1.27.0            1.32.0            java-archive  GHSA-fj2m-w3wv-x9pr  Critical  1.9% (77th)    1.8
+http2-server                   9.4.44.v20210927  9.4.47            java-archive  GHSA-wgmr-mf83-7x4j  High      2.3% (81st)    1.7
+jetty-server                   9.4.44.v20210927  9.4.51.v20230217  java-archive  GHSA-qw69-rqj8-6qw8  Medium    3.3% (87th)    1.7
+netty-handler                  4.1.108.Final     4.1.118.Final     java-archive  GHSA-4g8c-wm8x-jfhw  High      2.1% (79th)    1.6
+spring-security-web            5.7.12            5.7.13            java-archive  GHSA-c4q5-6c82-3qpw  Critical  1.7% (75th)    1.6
+zookeeper                      3.6.2             3.7.2             java-archive  GHSA-7286-pgfv-vxvh  Critical  1.7% (75th)    1.6
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-r29c-68gh-xp6x  Critical  1.6% (72nd)    1.5
+netty-handler                  4.1.68.Final      4.1.94.Final      java-archive  GHSA-6mjq-h674-j845  Medium    2.5% (82nd)    1.4
+tika-core                      1.27              1.28.2            java-archive  GHSA-rpjm-422r-95mh  Medium    2.6% (83rd)    1.4
+ant                            1.8.2             1.9.16            java-archive  GHSA-q5r4-cfpx-h6fh  Medium    2.5% (83rd)    1.3
+snappy-java                    1.1.7.6           1.1.10.1          java-archive  GHSA-qcwq-55hx-v3vh  High      1.8% (75th)    1.3
+commons-lang3                  3.10              3.18.0            java-archive  GHSA-j288-q9x7-2f5v  Medium    2.2% (80th)    1.2
+commons-lang3                  3.17.0            3.18.0            java-archive  GHSA-j288-q9x7-2f5v  Medium    2.2% (80th)    1.2
+protobuf-java                  3.11.0            3.16.1            java-archive  GHSA-wrvw-hg22-4m67  High      1.7% (74th)    1.2
+http2-common                   9.4.44.v20210927  9.4.58            java-archive  GHSA-mmxm-8w33-wc4h  High      1.6% (73rd)    1.2
+http2-common                   9.4.53.v20231009  9.4.58            java-archive  GHSA-mmxm-8w33-wc4h  High      1.6% (73rd)    1.2
+netty-codec-smtp               4.1.108.Final     4.1.128.Final     java-archive  GHSA-jq43-27x9-3v86  High      1.6% (73rd)    1.2
+netty-codec-smtp               4.1.124.Final     4.1.128.Final     java-archive  GHSA-jq43-27x9-3v86  High      1.6% (73rd)    1.2
+commons-configuration2         2.1.1             2.10.1            java-archive  GHSA-xjp4-hw94-mvp5  Medium    2.1% (79th)    1.2
+commons-configuration2         2.8.0             2.10.1            java-archive  GHSA-xjp4-hw94-mvp5  Medium    2.1% (79th)    1.2
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-h6fc-48rj-7qqh  Critical  1.2% (66th)    1.2
+http2-common                   9.4.44.v20210927  9.4.54            java-archive  GHSA-rggv-cv7r-mw98  High      1.4% (70th)    1.1
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-5m62-pw8w-7w9f  Critical  1.1% (63rd)    1.0
+ant                            1.8.2             1.9.15            java-archive  GHSA-4p6w-m9wc-c9c9  Medium    1.8% (76th)    1.0
+commons-configuration2         2.1.1             2.10.1            java-archive  GHSA-9w38-p64v-xpmv  Medium    1.7% (75th)    1.0
+commons-configuration2         2.8.0             2.10.1            java-archive  GHSA-9w38-p64v-xpmv  Medium    1.7% (75th)    1.0
+tika-core                      1.27              1.28.3            java-archive  GHSA-qw3f-w4pf-jh5f  Medium    1.9% (77th)    1.0
+commons-io                     2.8.0             2.14.0            java-archive  GHSA-78wr-2p64-hpwj  High      1.2% (66th)    1.0
+zookeeper                      3.9.2             3.9.5             java-archive  GHSA-crhr-qqj8-rpxc  High      1.2% (64th)    1.0
+solr-solrj                     8.11.2            8.11.3            java-archive  GHSA-xrj7-x7gp-wwqr  Medium    1.6% (72nd)    0.9
+snappy-java                    1.1.7.6           1.1.10.1          java-archive  GHSA-pqr6-cmr2-h8hf  Medium    1.7% (75th)    0.9
+netty-codec-http2              4.1.108.Final     4.1.132.Final     java-archive  GHSA-w9fj-cfpg-grvv  High      1.1% (63rd)    0.9
+netty-codec-http2              4.1.124.Final     4.1.132.Final     java-archive  GHSA-w9fj-cfpg-grvv  High      1.1% (63rd)    0.9
+solr-core                      8.11.2            8.11.3            java-archive  GHSA-4wxw-42wx-2wfx  Low       3.0% (86th)    0.9
+solr-core                      8.11.2            9.8.0             java-archive  GHSA-68r2-fwcg-qpm8  High      1.2% (63rd)    0.8
+netty-codec-http2              4.1.108.Final     4.1.124.Final     java-archive  GHSA-prj3-ccx8-p6x4  High      1.0% (60th)    0.8
+snappy-java                    1.1.7.6           1.1.10.1          java-archive  GHSA-fjpj-2g6w-x25r  Medium    1.5% (71st)    0.8
+poi-scratchpad                 4.1.2             5.2.1             java-archive  GHSA-mqvp-7rrg-9jxc  Medium    1.5% (72nd)    0.8
+snappy-java                    1.1.7.6           1.1.10.4          java-archive  GHSA-55g7-9cwv-5qfv  High      1.0% (60th)    0.8
+zookeeper                      3.9.2             3.9.3             java-archive  GHSA-g93m-8x6h-g5gv  High      0.9% (56th)    0.8
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-f6hv-jmp6-3vwv  High      1.0% (59th)    0.7
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-f6hv-jmp6-3vwv  High      1.0% (59th)    0.7
+netty-codec-http2              4.1.108.Final     4.1.133.Final     java-archive  GHSA-f6hv-jmp6-3vwv  High      1.0% (59th)    0.7
+netty-codec-http2              4.1.124.Final     4.1.133.Final     java-archive  GHSA-f6hv-jmp6-3vwv  High      1.0% (59th)    0.7
+netty-codec-dns                4.1.108.Final     4.1.133.Final     java-archive  GHSA-cm33-6792-r9fm  High      1.0% (58th)    0.7
+netty-codec-dns                4.1.124.Final     4.1.133.Final     java-archive  GHSA-cm33-6792-r9fm  High      1.0% (58th)    0.7
+poi-ooxml                      4.1.2             5.4.0             java-archive  GHSA-gmg8-593g-7mv3  Medium    1.3% (67th)    0.7
+poi-ooxml                      5.2.2             5.4.0             java-archive  GHSA-gmg8-593g-7mv3  Medium    1.3% (67th)    0.7
+opennlp-tools                  1.9.2             2.5.9             java-archive  GHSA-cx4m-2p55-rw7j  Critical  0.7% (48th)    0.6
+jackson-databind               2.12.7.1          2.18.8            java-archive  GHSA-j3rv-43j4-c7qm  High      0.8% (52nd)    0.6
+jackson-databind               2.13.3            2.18.8            java-archive  GHSA-j3rv-43j4-c7qm  High      0.8% (52nd)    0.6
+jackson-databind               2.17.2            2.18.8            java-archive  GHSA-j3rv-43j4-c7qm  High      0.8% (52nd)    0.6
+protobuf-java                  3.11.0            3.16.3            java-archive  GHSA-h4h5-3hr4-j3g2  Medium    1.1% (62nd)    0.6
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-gx5v-xp9w-j4cg  High      0.8% (52nd)    0.6
+lz4-java                       1.8.0             1.8.1             java-archive  GHSA-vqf4-7m7x-wgfc  High      0.7% (49th)    0.6
+bcprov-jdk15on                 1.69              1.78              java-archive  GHSA-8xfc-gm6g-vgpv  Medium    1.1% (62nd)    0.6
+apache-mime4j-core             0.8.3             0.8.10            java-archive  GHSA-jw7r-rxff-gv24  Medium    1.1% (62nd)    0.6
+jetty-server                   9.4.44.v20210927  9.4.56            java-archive  GHSA-g8m5-722r-8whq  Medium    1.0% (60th)    0.6
+jackson-databind               2.12.7.1          2.18.8            java-archive  GHSA-rmj7-2vxq-3g9f  High      0.7% (50th)    0.6
+jackson-databind               2.13.3            2.18.8            java-archive  GHSA-rmj7-2vxq-3g9f  High      0.7% (50th)    0.6
+jackson-databind               2.17.2            2.18.8            java-archive  GHSA-rmj7-2vxq-3g9f  High      0.7% (50th)    0.6
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-57rv-r2g8-2cj3  High      0.8% (51st)    0.6
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-57rv-r2g8-2cj3  High      0.8% (51st)    0.6
+jetty-http                     9.4.44.v20210927  9.4.52            java-archive  GHSA-hmr7-m48g-48f6  Medium    1.1% (61st)    0.6
+jackson-core                   2.12.3            2.15.0            java-archive  GHSA-h46c-h94j-95f3  High      0.6% (46th)    0.5
+jackson-core                   2.12.7            2.15.0            java-archive  GHSA-h46c-h94j-95f3  High      0.6% (46th)    0.5
+jackson-core                   2.13.3            2.15.0            java-archive  GHSA-h46c-h94j-95f3  High      0.6% (46th)    0.5
+jackson-core                   2.4.0             2.15.0            java-archive  GHSA-h46c-h94j-95f3  High      0.6% (46th)    0.5
+log4j-core                     2.17.1            2.25.4            java-archive  GHSA-3pxv-7cmr-fjr4  Medium    0.9% (54th)    0.5
+jose4j                         0.6.5             0.9.4             java-archive  GHSA-6qvw-249j-h44c  Medium    0.9% (55th)    0.5
+commons-compress               1.21              1.26.0            java-archive  GHSA-4265-ccf5-phj5  Medium    0.9% (56th)    0.5
+netty-codec-haproxy            4.1.108.Final     4.1.136.Final     java-archive  GHSA-q6cq-mhr2-jmr5  High      0.6% (45th)    0.5
+netty-codec-haproxy            4.1.124.Final     4.1.136.Final     java-archive  GHSA-q6cq-mhr2-jmr5  High      0.6% (45th)    0.5
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-jppx-w49h-x2qq  High      0.6% (45th)    0.5
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-jppx-w49h-x2qq  High      0.6% (45th)    0.5
+netty-codec-haproxy            4.1.108.Final     4.1.135.Final     java-archive  GHSA-h2qv-fj59-j46j  High      0.6% (46th)    0.5
+netty-codec-haproxy            4.1.124.Final     4.1.135.Final     java-archive  GHSA-h2qv-fj59-j46j  High      0.6% (46th)    0.5
+bcprov-jdk15on                 1.69              1.78              java-archive  GHSA-v435-xc8x-wvr9  Medium    0.9% (56th)    0.5
+jetty-servlets                 9.4.44.v20210927  9.4.54            java-archive  GHSA-j26w-f9rq-mr2q  Medium    0.9% (57th)    0.5
+jose4j                         0.6.5             0.9.3             java-archive  GHSA-7g24-qg88-p43q  High      0.6% (47th)    0.5
+jetty-http                     9.4.44.v20210927  12.0.12           java-archive  GHSA-qh8g-58pp-2wxh  Medium    1.0% (58th)    0.5
+jetty-http                     9.4.57.v20241219  12.0.12           java-archive  GHSA-qh8g-58pp-2wxh  Medium    1.0% (58th)    0.5
+netty-codec-http               4.1.108.Final     4.1.132.Final     java-archive  GHSA-pwqr-wmgm-9rr8  High      0.6% (47th)    0.5
+netty-codec-http               4.1.124.Final     4.1.132.Final     java-archive  GHSA-pwqr-wmgm-9rr8  High      0.6% (47th)    0.5
+solr-core                      8.11.2            9.10.1            java-archive  GHSA-vc2w-4v3p-2mqw  High      0.7% (47th)    0.5
+zookeeper                      3.9.2             3.9.5             java-archive  GHSA-7xrh-hqfc-g7qr  High      0.6% (46th)    0.5
+libthrift                      0.14.0            0.23.0            java-archive  GHSA-7pwc-h2j2-rjgj  High      0.6% (46th)    0.5
+libthrift                      0.14.1            0.23.0            java-archive  GHSA-7pwc-h2j2-rjgj  High      0.6% (46th)    0.5
+netty-codec-haproxy            4.1.108.Final     4.1.135.Final     java-archive  GHSA-cc37-9q2j-3hfv  High      0.6% (46th)    0.5
+netty-codec-haproxy            4.1.124.Final     4.1.135.Final     java-archive  GHSA-cc37-9q2j-3hfv  High      0.6% (46th)    0.5
+opennlp-tools                  1.9.2             2.5.9             java-archive  GHSA-659w-93r5-9j6m  High      0.6% (45th)    0.5
+opennlp-tools                  1.9.2             2.5.9             java-archive  GHSA-4v8g-86x5-3vrc  Critical  0.5% (39th)    0.4
+netty-handler                  4.1.108.Final     4.1.135.Final     java-archive  GHSA-3qp7-7mw8-wx86  High      0.6% (44th)    0.4
+netty-handler                  4.1.124.Final     4.1.135.Final     java-archive  GHSA-3qp7-7mw8-wx86  High      0.6% (44th)    0.4
+netty-handler                  4.1.68.Final      4.1.135.Final     java-archive  GHSA-3qp7-7mw8-wx86  High      0.6% (44th)    0.4
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-fv25-8xcx-gqjc  High      0.6% (45th)    0.4
+nimbus-jose-jwt                10.0.1            10.0.2            java-archive  GHSA-xwmg-2g98-w7v9  Medium    0.8% (53rd)    0.4
+nimbus-jose-jwt                9.37.2            9.37.4            java-archive  GHSA-xwmg-2g98-w7v9  Medium    0.8% (53rd)    0.4
+log4j-core                     2.17.1            2.25.3            java-archive  GHSA-vc5p-v9hr-52mj  Medium    0.8% (51st)    0.4
+protobuf-java                  3.11.0            3.16.3            java-archive  GHSA-g5ww-5jh7-63cx  High      0.6% (43rd)    0.4
+spring-security-crypto         5.7.12            5.7.16            java-archive  GHSA-mg83-c7gq-rv5c  High      0.6% (43rd)    0.4
+bcprov-jdk15on                 1.69              1.78              java-archive  GHSA-4h8f-2wvx-gg5w  Medium    0.8% (52nd)    0.4
+netty-codec-redis              4.1.108.Final     4.1.135.Final     java-archive  GHSA-6jv9-x5w9-2ccm  High      0.5% (40th)    0.4
+netty-codec-redis              4.1.124.Final     4.1.135.Final     java-archive  GHSA-6jv9-x5w9-2ccm  High      0.5% (40th)    0.4
+log4j-layout-template-json     2.17.1            2.25.4            java-archive  GHSA-w35j-pv5h-q9q9  Medium    0.7% (49th)    0.4
+tomcat-embed-core              9.0.113           9.0.116           java-archive  GHSA-563x-q5rq-57qp  High      0.5% (41st)    0.4
+jline-remote-telnet            3.9.0             4.2.1             java-archive  GHSA-2r2c-cx56-8933  High      0.5% (40th)    0.4
+solr-core                      8.11.2            9.10.1            java-archive  GHSA-qr3p-2xj2-q7hq  High      0.5% (39th)    0.4
+jline-remote-telnet            3.9.0             4.2.1             java-archive  GHSA-47qp-hqvx-6r3f  High      0.5% (40th)    0.4
+tomcat-embed-core              9.0.113           9.0.115           java-archive  GHSA-mgp5-rv84-w37q  High      0.5% (39th)    0.4
+protobuf-java                  3.11.0            3.16.3            java-archive  GHSA-4gg5-vx3j-xwc7  High      0.5% (39th)    0.4
+jetty-server                   9.4.44.v20210927  9.4.57.v20241219  java-archive  GHSA-q4rv-gq96-w7c5  High      0.5% (39th)    0.4
+netty-handler                  4.1.108.Final     4.1.135.Final     java-archive  GHSA-x4gw-5cx5-pgmh  High      0.5% (38th)    0.4
+netty-handler                  4.1.124.Final     4.1.135.Final     java-archive  GHSA-x4gw-5cx5-pgmh  High      0.5% (38th)    0.4
+netty-handler                  4.1.68.Final      4.1.135.Final     java-archive  GHSA-x4gw-5cx5-pgmh  High      0.5% (38th)    0.4
+jetty-server                   9.4.44.v20210927  9.4.51.v20230217  java-archive  GHSA-p26g-97m4-6q7c  Low       1.3% (67th)    0.4
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-5mp6-jrq3-r938  High      0.5% (38th)    0.4
+tomcat-embed-core              9.0.113           9.0.116           java-archive  GHSA-rv64-5gf8-9qq8  High      0.5% (37th)    0.3
+jetty-http                     9.4.44.v20210927  9.4.47            java-archive  GHSA-cj7v-27pg-wf7q  Low       1.2% (64th)    0.3
+netty-codec                    4.1.108.Final     4.1.125.Final     java-archive  GHSA-3p8m-j85q-pgmj  Medium    0.6% (43rd)    0.3
+netty-codec                    4.1.124.Final     4.1.125.Final     java-archive  GHSA-3p8m-j85q-pgmj  Medium    0.6% (43rd)    0.3
+netty-codec                    4.1.68.Final      4.1.125.Final     java-archive  GHSA-3p8m-j85q-pgmj  Medium    0.6% (43rd)    0.3
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-xxqh-mfjm-7mv9  Medium    0.6% (45th)    0.3
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-xxqh-mfjm-7mv9  Medium    0.6% (45th)    0.3
+jetty-servlets                 9.4.44.v20210927  9.4.52            java-archive  GHSA-3gh6-v5v9-6v9j  Low       1.0% (59th)    0.3
+netty-codec                    4.1.108.Final     4.1.133.Final     java-archive  GHSA-mj4r-2hfc-f8p6  High      0.4% (35th)    0.3
+netty-codec                    4.1.124.Final     4.1.133.Final     java-archive  GHSA-mj4r-2hfc-f8p6  High      0.4% (35th)    0.3
+netty-codec                    4.1.68.Final      4.1.133.Final     java-archive  GHSA-mj4r-2hfc-f8p6  High      0.4% (35th)    0.3
+log4j-1.2-api                  2.17.1            2.25.4            java-archive  GHSA-h383-gmxw-35v2  Medium    0.5% (42nd)    0.3
+netty-codec-http2              4.1.108.Final     4.1.135.Final     java-archive  GHSA-c2gf-v879-257j  Medium    0.6% (46th)    0.3
+netty-codec-http2              4.1.124.Final     4.1.135.Final     java-archive  GHSA-c2gf-v879-257j  Medium    0.6% (46th)    0.3
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-6jqx-86gh-f27w  High      0.4% (34th)    0.3
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-mvh2-crg5-v77c  High      0.4% (34th)    0.3
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-6jqx-86gh-f27w  High      0.4% (34th)    0.3
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-mvh2-crg5-v77c  High      0.4% (34th)    0.3
+netty-codec-stomp              4.1.108.Final     4.1.136.Final     java-archive  GHSA-vhch-2wf3-m8rp  High      0.4% (34th)    0.3
+netty-codec-stomp              4.1.124.Final     4.1.136.Final     java-archive  GHSA-vhch-2wf3-m8rp  High      0.4% (34th)    0.3
+guava                          25.0-jre          32.0.0-android    java-archive  GHSA-5mg8-w23w-74h3  Low       1.0% (58th)    0.3
+guava                          25.1-jre          32.0.0-android    java-archive  GHSA-5mg8-w23w-74h3  Low       1.0% (58th)    0.3
+tomcat-embed-core              9.0.113           9.0.116           java-archive  GHSA-9m3c-qcxr-9x87  Medium    0.5% (41st)    0.3
+aircompressor                  0.27              2.0.3             java-archive  GHSA-vx9q-rhv9-3jvg  High      0.4% (30th)    0.3
+netty-codec-xml                4.1.108.Final     4.1.136.Final     java-archive  GHSA-4qhr-g3c6-fcfx  High      0.4% (29th)    0.3
+netty-codec-xml                4.1.124.Final     4.1.136.Final     java-archive  GHSA-4qhr-g3c6-fcfx  High      0.4% (29th)    0.3
+netty-codec-redis              4.1.108.Final     4.1.135.Final     java-archive  GHSA-5w86-c3rq-vjj7  High      0.4% (31st)    0.3
+netty-codec-redis              4.1.108.Final     4.1.135.Final     java-archive  GHSA-6ghj-frrj-jjj3  High      0.4% (31st)    0.3
+netty-codec-redis              4.1.124.Final     4.1.135.Final     java-archive  GHSA-5w86-c3rq-vjj7  High      0.4% (31st)    0.3
+netty-codec-redis              4.1.124.Final     4.1.135.Final     java-archive  GHSA-6ghj-frrj-jjj3  High      0.4% (31st)    0.3
+netty-transport-sctp           4.1.108.Final     4.1.135.Final     java-archive  GHSA-5xrh-qmmq-w6ch  High      0.4% (31st)    0.3
+netty-transport-sctp           4.1.124.Final     4.1.135.Final     java-archive  GHSA-5xrh-qmmq-w6ch  High      0.4% (31st)    0.3
+netty-codec-redis              4.1.108.Final     4.1.135.Final     java-archive  GHSA-3244-j874-rhc2  High      0.4% (31st)    0.3
+netty-codec-redis              4.1.124.Final     4.1.135.Final     java-archive  GHSA-3244-j874-rhc2  High      0.4% (31st)    0.3
+elasticsearch                  7.17.29           8.15.1            java-archive  GHSA-ghfh-p92w-j4mg  Medium    0.5% (40th)    0.3
+bcprov-jdk18on                 1.78.1            1.80.2            java-archive  GHSA-574f-3g2m-x479  Critical  0.3% (23rd)    0.3
+netty-handler-proxy            4.1.108.Final     4.1.133.Final     java-archive  GHSA-45q3-82m4-75jr  Low       1.0% (57th)    0.3
+netty-handler-proxy            4.1.124.Final     4.1.133.Final     java-archive  GHSA-45q3-82m4-75jr  Low       1.0% (57th)    0.3
+bcprov-jdk18on                 1.78.1            1.84              java-archive  GHSA-c3fc-8qff-9hwx  Medium    0.5% (41st)    0.3
+netty-codec-http2              4.1.108.Final     4.1.136.Final     java-archive  GHSA-93wv-jw9v-4972  High      0.4% (29th)    0.3
+netty-codec-http2              4.1.124.Final     4.1.136.Final     java-archive  GHSA-93wv-jw9v-4972  High      0.4% (29th)    0.3
+jackson-databind               2.12.7.1          2.14.0            java-archive  GHSA-3wrr-7qpf-2prh  Medium    0.5% (37th)    0.3
+jackson-databind               2.13.3            2.14.0            java-archive  GHSA-3wrr-7qpf-2prh  Medium    0.5% (37th)    0.3
+bcpkix-jdk15on                 1.69              1.79              java-archive  GHSA-4cx2-fc23-5wg6  Medium    0.5% (37th)    0.3
+netty-resolver-dns             4.1.108.Final     4.1.135.Final     java-archive  GHSA-5pvg-856g-cp85  High      0.3% (24th)    0.3
+netty-resolver-dns             4.1.124.Final     4.1.135.Final     java-archive  GHSA-5pvg-856g-cp85  High      0.3% (24th)    0.3
+netty-codec-mqtt               4.1.108.Final     4.1.133.Final     java-archive  GHSA-jfg9-48mv-9qgx  Medium    0.5% (39th)    0.3
+netty-codec-mqtt               4.1.124.Final     4.1.133.Final     java-archive  GHSA-jfg9-48mv-9qgx  Medium    0.5% (39th)    0.3
+calcite-core                   1.27.0            1.42.0            java-archive  GHSA-c2rv-hwqm-wjpg  Medium    0.4% (35th)    0.3
+commons-configuration2         2.10.1            2.15.0            java-archive  GHSA-337m-mw94-2v6g  Medium    0.5% (38th)    0.2
+commons-configuration2         2.8.0             2.15.0            java-archive  GHSA-337m-mw94-2v6g  Medium    0.5% (38th)    0.2
+commons-compress               1.21              1.26.0            java-archive  GHSA-4g9r-vxhx-9pgx  Medium    0.4% (36th)    0.2
+log4j-core                     2.17.1            2.25.4            java-archive  GHSA-6hg6-v5c8-fphq  Medium    0.4% (33rd)    0.2
+bcpkix-jdk15on                 1.69              1.84              java-archive  GHSA-wg6q-6289-32hp  Medium    0.4% (31st)    0.2
+logback-core                   1.3.14            1.3.15            java-archive  GHSA-pr98-23f8-jwxv  Medium    0.4% (33rd)    0.2
+google-oauth-client            1.32.1            1.33.3            java-archive  GHSA-hw42-3568-wj87  High      0.3% (21st)    0.2
+netty-common                   4.1.108.Final     4.1.115.Final     java-archive  GHSA-xq3w-v528-46rv  Medium    0.4% (33rd)    0.2
+netty-common                   4.1.68.Final      4.1.115.Final     java-archive  GHSA-xq3w-v528-46rv  Medium    0.4% (33rd)    0.2
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-6cqp-g7gg-8hr5  Medium    0.4% (29th)    0.2
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-6cqp-g7gg-8hr5  Medium    0.4% (29th)    0.2
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-m4cv-j2px-7723  Medium    0.4% (29th)    0.2
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-m4cv-j2px-7723  Medium    0.4% (29th)    0.2
+netty-handler                  4.1.108.Final     4.1.135.Final     java-archive  GHSA-c653-97m9-rcg9  High      0.3% (20th)    0.2
+netty-handler                  4.1.124.Final     4.1.135.Final     java-archive  GHSA-c653-97m9-rcg9  High      0.3% (20th)    0.2
+netty-handler                  4.1.68.Final      4.1.135.Final     java-archive  GHSA-c653-97m9-rcg9  High      0.3% (20th)    0.2
+spring-security-core           5.7.12            5.7.14            java-archive  GHSA-q3v6-hm2v-pw99  Medium    0.4% (31st)    0.2
+netty-common                   4.1.108.Final     4.1.118.Final     java-archive  GHSA-389x-839f-4rhx  Medium    0.4% (31st)    0.2
+netty-common                   4.1.68.Final      4.1.118.Final     java-archive  GHSA-389x-839f-4rhx  Medium    0.4% (31st)    0.2
+netty-resolver-dns             4.1.108.Final     4.1.135.Final     java-archive  GHSA-676x-f7gg-47vc  High      0.2% (16th)    0.2
+netty-resolver-dns             4.1.124.Final     4.1.135.Final     java-archive  GHSA-676x-f7gg-47vc  High      0.2% (16th)    0.2
+netty-codec                    4.1.108.Final     4.1.136.Final     java-archive  GHSA-558v-64gr-wgg4  High      0.2% (15th)    0.2
+netty-codec                    4.1.124.Final     4.1.136.Final     java-archive  GHSA-558v-64gr-wgg4  High      0.2% (15th)    0.2
+netty-codec                    4.1.68.Final      4.1.136.Final     java-archive  GHSA-558v-64gr-wgg4  High      0.2% (15th)    0.2
+netty-codec-http               4.1.108.Final     4.1.125.Final     java-archive  GHSA-fghv-69vj-qj49  Low       0.6% (46th)    0.2
+netty-codec-http               4.1.124.Final     4.1.125.Final     java-archive  GHSA-fghv-69vj-qj49  Low       0.6% (46th)    0.2
+jose4j                         0.6.5             0.9.6             java-archive  GHSA-3677-xxcr-wjqv  High      0.2% (16th)    0.2
+jackson-databind               2.12.7.1          2.18.9            java-archive  GHSA-5jmj-h7xm-6q6v  Medium    0.3% (27th)    0.2
+jackson-databind               2.13.3            2.18.9            java-archive  GHSA-5jmj-h7xm-6q6v  Medium    0.3% (27th)    0.2
+jackson-databind               2.17.2            2.18.9            java-archive  GHSA-5jmj-h7xm-6q6v  Medium    0.3% (27th)    0.2
+netty-codec-http2              4.1.108.Final     4.1.136.Final     java-archive  GHSA-c69g-56f8-xwqj  Medium    0.3% (21st)    0.2
+netty-codec-http2              4.1.124.Final     4.1.136.Final     java-archive  GHSA-c69g-56f8-xwqj  Medium    0.3% (21st)    0.2
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-q4f6-jm68-57ww  Medium    0.3% (21st)    0.2
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-q4f6-jm68-57ww  Medium    0.3% (21st)    0.2
+netty-codec-http               4.1.108.Final     4.1.129.Final     java-archive  GHSA-84h7-rjj3-6jx4  Medium    0.3% (22nd)    0.2
+netty-codec-http               4.1.124.Final     4.1.129.Final     java-archive  GHSA-84h7-rjj3-6jx4  Medium    0.3% (22nd)    0.2
+tomcat-embed-core              9.0.113           9.0.116           java-archive  GHSA-8mc5-53m5-3qj2  Medium    0.3% (23rd)    0.2
+netty-codec-http2              4.1.108.Final     4.1.135.Final     java-archive  GHSA-563q-j3cm-6jxm  Medium    0.3% (22nd)    0.2
+netty-codec-http2              4.1.124.Final     4.1.135.Final     java-archive  GHSA-563q-j3cm-6jxm  Medium    0.3% (22nd)    0.2
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-v8h7-rr48-vmmv  Medium    0.3% (23rd)    0.2
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-v8h7-rr48-vmmv  Medium    0.3% (23rd)    0.2
+jackson-core                   2.12.3            2.13.0            java-archive  GHSA-wf8f-6423-gfxg  Medium    0.3% (26th)    0.2
+jackson-core                   2.12.7            2.13.0            java-archive  GHSA-wf8f-6423-gfxg  Medium    0.3% (26th)    0.2
+jackson-core                   2.4.0             2.13.0            java-archive  GHSA-wf8f-6423-gfxg  Medium    0.3% (26th)    0.2
+netty-resolver-dns             4.1.108.Final     4.1.135.Final     java-archive  GHSA-xmv7-r254-6q78  Medium    0.3% (17th)    0.2
+netty-resolver-dns             4.1.124.Final     4.1.135.Final     java-archive  GHSA-xmv7-r254-6q78  Medium    0.3% (17th)    0.2
+netty-codec-http2              4.1.108.Final     4.1.135.Final     java-archive  GHSA-5x3r-wrvg-rp6q  Medium    0.3% (21st)    0.2
+netty-codec-http2              4.1.124.Final     4.1.135.Final     java-archive  GHSA-5x3r-wrvg-rp6q  Medium    0.3% (21st)    0.2
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-gcjf-9mgh-3p7g  Medium    0.3% (20th)    0.2
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-gcjf-9mgh-3p7g  Medium    0.3% (20th)    0.2
+netty-codec-http               4.1.108.Final     4.1.136.Final     java-archive  GHSA-4mp9-239f-g9hg  Medium    0.3% (18th)    0.2
+netty-codec-http               4.1.124.Final     4.1.136.Final     java-archive  GHSA-4mp9-239f-g9hg  Medium    0.3% (18th)    0.2
+netty-codec-stomp              4.1.108.Final     4.1.136.Final     java-archive  GHSA-3g8r-4pfx-jmfh  Medium    0.2% (16th)    0.1
+netty-codec-stomp              4.1.124.Final     4.1.136.Final     java-archive  GHSA-3g8r-4pfx-jmfh  Medium    0.2% (16th)    0.1
+netty-codec-http               4.1.108.Final     4.1.133.Final     java-archive  GHSA-38f8-5428-x5cv  Medium    0.2% (16th)    0.1
+netty-codec-http               4.1.124.Final     4.1.133.Final     java-archive  GHSA-38f8-5428-x5cv  Medium    0.2% (16th)    0.1
+jackson-databind               2.17.2            2.18.8            java-archive  GHSA-3pjw-73gf-8qr5  Medium    0.2% (16th)    0.1
+zookeeper                      3.9.2             3.9.4             java-archive  GHSA-2hmj-97jw-28jh  Medium    0.3% (21st)    0.1
+netty-handler-ssl-ocsp         4.1.108.Final     4.1.136.Final     java-archive  GHSA-272m-gcwp-mpwg  High      0.2% (8th)     0.1
+netty-handler-ssl-ocsp         4.1.124.Final     4.1.136.Final     java-archive  GHSA-272m-gcwp-mpwg  High      0.2% (8th)     0.1
+guava                          25.0-jre          32.0.0-android    java-archive  GHSA-7g45-4rm6-3mm3  Medium    0.2% (16th)    0.1
+guava                          25.1-jre          32.0.0-android    java-archive  GHSA-7g45-4rm6-3mm3  Medium    0.2% (16th)    0.1
+elasticsearch                  7.17.29           8.18.8            java-archive  GHSA-56r7-h6mw-rcfv  Medium    0.2% (14th)    0.1
+netty-codec-http               4.1.108.Final     4.1.135.Final     java-archive  GHSA-hvcg-qmg6-jm4c  Medium    0.2% (14th)    0.1
+netty-codec-http               4.1.124.Final     4.1.135.Final     java-archive  GHSA-hvcg-qmg6-jm4c  Medium    0.2% (14th)    0.1
+tomcat-embed-core              9.0.113           9.0.118           java-archive  GHSA-9m89-8frq-c98c  Low       0.4% (27th)    0.1
+netty-codec-redis              4.1.108.Final     4.1.133.Final     java-archive  GHSA-rgrr-p7gp-5xj7  Medium    0.2% (9th)     0.1
+netty-codec-redis              4.1.124.Final     4.1.133.Final     java-archive  GHSA-rgrr-p7gp-5xj7  Medium    0.2% (9th)     0.1
+jackson-databind               2.12.7.1          2.18.8            java-archive  GHSA-hgj6-7826-r7m5  Medium    0.2% (12th)    0.1
+jackson-databind               2.13.3            2.18.8            java-archive  GHSA-hgj6-7826-r7m5  Medium    0.2% (12th)    0.1
+jackson-databind               2.17.2            2.18.8            java-archive  GHSA-hgj6-7826-r7m5  Medium    0.2% (12th)    0.1
+jackson-databind               2.4.0             2.18.8            java-archive  GHSA-hgj6-7826-r7m5  Medium    0.2% (12th)    0.1
+logback-core                   1.3.14            1.5.34            java-archive  GHSA-jhq6-gfmj-v8fx  Low       0.4% (29th)    0.1
+hadoop-common                  3.2.2             3.4.0             java-archive  GHSA-f5fw-25gw-5m92  Low       0.4% (31st)    0.1
+netty-handler-ssl-ocsp         4.1.108.Final     4.1.136.Final     java-archive  GHSA-g7hg-vrcf-mvmr  High      0.1% (3rd)     0.1
+netty-handler-ssl-ocsp         4.1.124.Final     4.1.136.Final     java-archive  GHSA-g7hg-vrcf-mvmr  High      0.1% (3rd)     0.1
+logback-core                   1.3.14            1.3.16            java-archive  GHSA-25qh-j22f-pwp8  Medium    0.2% (7th)     < 0.1
+elasticsearch                  7.17.29           8.19.8            java-archive  GHSA-m9gh-789g-q5pv  Medium    0.2% (5th)     < 0.1
+netty-handler-ssl-ocsp         4.1.108.Final     4.1.136.Final     java-archive  GHSA-wc96-39fc-566f  High      0.1% (1st)     < 0.1
+netty-handler-ssl-ocsp         4.1.124.Final     4.1.136.Final     java-archive  GHSA-wc96-39fc-566f  High      0.1% (1st)     < 0.1
+logback-core                   1.3.14            1.5.33            java-archive  GHSA-p47f-322f-whfh  Low       0.4% (29th)    < 0.1
+netty-transport-native-epoll   4.1.108.Final     4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+netty-transport-native-epoll   4.1.118.Final     4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+netty-transport-native-epoll   4.1.124.Final     4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+netty-transport-native-epoll   4.1.68.Final      4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+netty-transport-native-kqueue  4.1.108.Final     4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+netty-transport-native-kqueue  4.1.124.Final     4.1.135.Final     java-archive  GHSA-w573-9ffj-6ff9  Medium    0.1% (3rd)     < 0.1
+logback-core                   1.3.14            1.3.15            java-archive  GHSA-6v67-2wr5-gvf4  Low       0.2% (13th)    < 0.1
+netty-codec-haproxy            4.1.108.Final     4.1.136.Final     java-archive  GHSA-wh89-7897-x99h  Medium    0.1% (1st)     < 0.1
+netty-codec-haproxy            4.1.124.Final     4.1.136.Final     java-archive  GHSA-wh89-7897-x99h  Medium    0.1% (1st)     < 0.1
+logback-core                   1.3.14            1.5.25            java-archive  GHSA-qqpg-mvqg-649v  Low       0.2% (5th)     < 0.1
+jackson-core                   2.12.3            2.18.8            java-archive  GHSA-r7wm-3cxj-wff9  High      N/A            N/A
+jackson-core                   2.12.7            2.18.8            java-archive  GHSA-r7wm-3cxj-wff9  High      N/A            N/A
+jackson-core                   2.13.3            2.18.8            java-archive  GHSA-r7wm-3cxj-wff9  High      N/A            N/A
+jackson-core                   2.17.2            2.18.8            java-archive  GHSA-r7wm-3cxj-wff9  High      N/A            N/A
+jackson-core                   2.4.0             2.18.8            java-archive  GHSA-r7wm-3cxj-wff9  High      N/A            N/A
+jetty-security                 9.4.44.v20210927  9.4.63            java-archive  GHSA-2fvj-hgj9-j2gr  High      N/A            N/A
+netty-codec-xml                4.1.108.Final     4.1.136.Final     java-archive  GHSA-v74w-7mr3-4qg3  High      N/A            N/A
+netty-codec-xml                4.1.124.Final     4.1.136.Final     java-archive  GHSA-v74w-7mr3-4qg3  High      N/A            N/A
+jackson-core                   2.12.3            2.18.6            java-archive  GHSA-72hv-8253-57qq  Medium    N/A            N/A
+jackson-core                   2.12.7            2.18.6            java-archive  GHSA-72hv-8253-57qq  Medium    N/A            N/A
+jackson-core                   2.13.3            2.18.6            java-archive  GHSA-72hv-8253-57qq  Medium    N/A            N/A
+jackson-core                   2.17.2            2.18.6            java-archive  GHSA-72hv-8253-57qq  Medium    N/A            N/A
+jackson-core                   2.4.0             2.18.6            java-archive  GHSA-72hv-8253-57qq  Medium    N/A            N/A
+jose4j                         0.6.5             0.9.3             java-archive  GHSA-jgvc-jfgh-rjvv  Medium    N/A            N/A
+netty-codec-dns                4.1.108.Final     4.1.136.Final     java-archive  GHSA-mfg7-5gfp-c4w3  Medium    N/A            N/A
+netty-codec-dns                4.1.124.Final     4.1.136.Final     java-archive  GHSA-mfg7-5gfp-c4w3  Medium    N/A            N/A
+jetty-xml                      9.4.44.v20210927  9.4.52.v20230823  java-archive  GHSA-58qw-p7qm-5rvh  Low       N/A            N/A

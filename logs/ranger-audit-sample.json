@@ -1,0 +1,26 @@
+{
+  "validation": "SecureSolr Ranger authorization",
+  "service": "solr10",
+  "collection": "testcollection",
+  "events": [
+    {
+      "reqUser": "testuser",
+      "resource": "testcollection",
+      "access": "query",
+      "action": "query",
+      "result": 1,
+      "policy": 4,
+      "resultDescription": "ALLOWED"
+    },
+    {
+      "reqUser": "testuser",
+      "resource": "testcollection",
+      "access": "update",
+      "action": "update",
+      "result": 0,
+      "policy": -1,
+      "resultDescription": "DENIED"
+    }
+  ],
+  "credentialsIncluded": false
+}
