@@ -311,9 +311,13 @@ The full security demonstration also requires an **Apache Ranger 2.8.0** environ
 - Ranger ZooKeeper
 - Ranger Audit Solr
 
-The development environment for this project uses locally built patched Ranger 2.8.0 images.
+The development environment for this project uses locally built patched Apache Ranger 2.8.0 images.
 
-Those Ranger images are currently an external prerequisite and are not built by this repository.
+Sanitized Docker build definitions for the Ranger components are included under `ranger-build/`. Third-party JAR files, JDK archives, and other binary build artifacts are intentionally excluded from Git.
+
+Therefore, rebuilding the patched Ranger images from a fresh clone currently requires supplying the dependency artifacts referenced by the corresponding Dockerfiles. See `ranger-build/README.md` for details.
+
+The complete SecureSolr and Ranger service topology is defined in `docker-compose.yml`.
 
 ---
 
@@ -618,9 +622,11 @@ sbom/
 
 ## Current Limitation
 
-The custom patched **Apache Ranger 2.8.0 Docker images** used by the development environment are currently external to this repository.
+The repository includes sanitized Docker build definitions for the patched **Apache Ranger 2.8.0** components under `ranger-build/`.
 
-Therefore, this repository reproduces the hardened Solr image and SecureSolr frontend, while an existing compatible Ranger 2.8.0 environment is required for the complete Ranger integration demonstration.
+Third-party binary dependencies used by these builds, including JAR files and JDK archives, are intentionally excluded from Git. As a result, the Ranger images are not currently zero-preparation builds from a fresh clone. The required artifacts must be supplied to the appropriate build contexts before rebuilding the patched images.
+
+Alternatively, an existing compatible Apache Ranger 2.8.0 environment can be used for the complete SecureSolr Ranger integration demonstration.
 
 ---
 
