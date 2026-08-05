@@ -86,3 +86,9 @@ logs/*
 !logs/grype-high-critical.txt
 !logs/ranger-audit-sample.json
 !logs/dependency-track-validation.md
+# ==========================================
+# Ranger build artifacts
+# ==========================================
+ranger-build/**/*.jar
+ranger-build/**/*.tar.gz
+ranger-build/**/*.zip
