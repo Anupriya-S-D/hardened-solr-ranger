@@ -630,6 +630,66 @@ Alternatively, an existing compatible Apache Ranger 2.8.0 environment can be use
 
 ---
 
+## Working Demo & Authorization Validation
+
+The SecureSolr environment was functionally validated using the running Apache SolrCloud and Apache Ranger services. The following screenshots demonstrate system monitoring, Ranger policy configuration, role-based authorization, and audit logging.
+
+### SecureSolr Security Dashboard
+
+The SecureSolr dashboard provides a centralized view of the SolrCloud environment and its security configuration.
+
+![SecureSolr Security Dashboard](docs/screenshots/Figure%201.%20SecureSolr%20Security%20Dashboard.png)
+
+### Solr Collection Overview
+
+The collection view displays the configured Solr collection and its operational information.
+
+![Solr Collection Overview](docs/screenshots/Figure%202.%20Solr%20Collection%20Overview.png)
+
+### SolrCloud Cluster Status
+
+The cluster view provides visibility into the running SolrCloud environment and cluster status.
+
+![SolrCloud Cluster Status](docs/screenshots/Figure%203.%20SolrCloud%20Cluster%20Status.png)
+
+### Apache Ranger Authorization Policies
+
+Apache Ranger policies define the permissions assigned to users for protected Solr resources.
+
+![Apache Ranger Authorization Policies](docs/screenshots/Figure%204.%20Apache%20Ranger%20Authorization%20Policies.png)
+
+### Apache Ranger Audit Log
+
+Ranger audit records provide traceability of authorization decisions, including allowed and denied operations.
+
+![Apache Ranger Audit Log](docs/screenshots/Figure%205.%20Apache%20Ranger%20Audit%20Log%20%E2%80%93%20Allowed%20and%20Denied%20Access.png)
+
+### Ranger User Permission Matrix
+
+The permission matrix provides a consolidated view of the access privileges assigned to the configured users.
+
+![Ranger User Permission Matrix](docs/screenshots/Figure%206.%20Ranger%20User%20Permission%20Matrix.png)
+
+### Authorization Test Results
+
+Role-based access control was validated using administrator and restricted test-user accounts.
+
+| User | Query | Update |
+| --- | --- | --- |
+| Admin | Allowed (HTTP 200) | Allowed (HTTP 200) |
+| Test User | Allowed (HTTP 200) | Denied (HTTP 403) |
+
+The test-user validation demonstrates that an authorized query succeeds while an unauthorized update is rejected by the Ranger authorization policy.
+
+![Test User Authorization Validation](docs/screenshots/Figure%207.%20Apache%20Ranger%20Authorization%20Validation%20Using%20cURL.png)
+
+The administrator validation demonstrates successful execution of an authorized update operation.
+
+![Administrator Authorization Validation](docs/screenshots/Figure%208.%20Administrative%20Update%20Successful%20(HTTP%20200).png)
+
+These results demonstrate that the SecureSolr environment enforces the configured Apache Ranger authorization policies and records security-relevant access events for auditing.
+
+
 ## Dependency-Track Validation
 
 The SecureSolr SBOM was analyzed using OWASP Dependency-Track v4.14.3 for software composition analysis.
