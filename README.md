@@ -719,3 +719,16 @@ SecureSolr is a security demonstration and validation environment.
 The included example configuration, sample data, validation logs, audit samples, and security artifacts are intended for development, testing, and demonstration purposes.
 
 Production deployments should use organization-approved secret management, TLS configuration, access controls, network isolation, vulnerability-management processes, supported software versions, and operational security controls.
+
+## Project Presentation
+
+The internship project presentation summarizing the SecureSolr architecture,
+methodology, authorization testing, audit validation, and software supply chain
+security work is available here:
+
+📊 [Internship Project Presentation](docs/presentation/Internship_PPT_Anupriya_20241CSE0682.pptx)
+
+> **Note:** This repository contains a proof-of-concept developed to demonstrate
+> the technologies and security concepts explored during the internship. It does
+> not represent the organization's production architecture or proprietary product
+> implementation.
